@@ -1,0 +1,8 @@
+S: 2
+w: 0.1
+theta: 0.5
+randomseed: 54321
+max_steps: 100000
+N0: 1000 1000
+mu: -0.3 0.3
+sigma: 0.1 0.15
