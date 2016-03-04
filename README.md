@@ -108,4 +108,4 @@ where the command line arguments are as follows:
 * [steps]: the number of time steps to run the program for (to reach equilibrium, this may need to be large, e.g., 1e7)
 * [dt]: the size of each time step (e.g., 0.02)
 * [species]: the number of initial species (e.g., 51)
-* [loci]: the number of distinct loci contributing to the quantitative trait (e.g., 25 means there are 25 loci and therefore 2 * 25 + 1 = 51 distinct genotypes)
+* [loci]: the number of distinct loci contributing to the quantitative trait (*n* loci result in 2*n* + 1 distinct genotypes)
