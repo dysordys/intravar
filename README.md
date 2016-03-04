@@ -72,4 +72,26 @@ where the command line arguments are:
 
 ### sim\_SK\_LV.R
 
-This script simulates the finite-locus eco-evolutionary dynamics with the Shpak-Kondrashov hypergeometric model of inheritance (Shpak and Kondrashov 1999, Evolution 53: 600-604). The output is a table whose (*i*, *j*)th entry is the density of species *i*'s genotype *j*. This is the version with species-specific environmental variation already implemented. Species' environmental standard deviations are independently and uniformly sampled from the interval [0.01, 0.05]. To change this, alter the min and max limits in line 36 of the script.
+This script simulates the finite-locus eco-evolutionary dynamics with the Shpak-Kondrashov hypergeometric model of inheritance (Shpak and Kondrashov 1999, Evolution 53: 600-604). This is the version with species-specific environmental variation already implemented. Species' environmental standard deviations are independently and uniformly sampled from the interval [0.01, 0.05]. To change this, alter the min and max limits in line 36 of the script.
+
+#### Input
+
+Name of file to save results in, the number of simulation steps, the size (in units of time) of each step, the number of initial species, and the number of loci.
+
+#### Output
+
+An (*S* x *G*) table, where S is the number of species and G is the number of genotypes. The (*i*,  *j*)th entry is the density of species *i*'s genotype *G* at the end of the simulation.
+
+
+#### To run
+
+Make sure the R packages "tensor" and "pracma" installed. Then run the script from the command line by invoking
+
+    Rscript SK_LV_model.R [outfile] [steps] [dt] [species] [loci]
+
+where the command line arguments are as follows:
+* [outfile]: name of file to save results in
+* [steps]: the number of time steps to run the program for (to reach equilibrium, this may need to be large, e.g., 1e7)
+* [dt]: the size of each time step (e.g., 0.02)
+* [species]: the number of initial species (e.g., 51)
+* [loci]: the number of distinct loci contributing to the quantitative trait (e.g., 25 means there are 25 loci and therefore 2 * 25 + 1 = 51 distinct genotypes)
