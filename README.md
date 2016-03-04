@@ -85,7 +85,7 @@ An (*S* x *G*) table, where S is the number of species and G is the number of ge
 
 #### To run
 
-Make sure the R packages "tensor" and "pracma" installed. Then run the script from the command line by invoking
+Make sure the R packages "tensor" and "pracma" are installed. Then run the script from the command line by invoking
 
     Rscript SK_LV_model.R [outfile] [steps] [dt] [species] [loci]
 
