@@ -9,8 +9,6 @@ This Mathematica 10.1 script generates the data in all our simulation sets for a
 
 In solving the differential equations, we have introduced a weak Allee effect into the Lotka-Volterra dynamics: species whose density falls below a predetermined threshold experience a smooth decline of their per capita growth rates to zero. This is to prevent densities from accidentally dropping to negative values due to numerical error. As long as the densities of extant species are substantially (i.e., several orders of magnitude) greater than the threshold density, this will not make a difference to the outcome of the dynamics.
 
-Note that running the code as is may take several weeks. One way to speed things up is to simulate just a handful of simulation sets at a time, by adjusting the range of sets (second line from the bottom in the script). One can then run several processes in parallel, each simulating a different subrange of the simulation sets, and then concatenate the results into a single file. In that case, be sure not to copy the output file headers except at the very top of the concatenated file.
-
 #### Input
 
 There is no special input: the script can be executed as is. However, near the top of the script, be sure to change the variable [outfile], which determines where and under what name the output will be saved.
@@ -39,6 +37,8 @@ The data frame gets saved into [outfile], defined near the top of the script.
 #### To run
 
 Simply execute the script in Mathematica.
+
+Note that running the code as is may take several weeks. One way to speed things up is to simulate just a handful of simulation sets at a time, by adjusting the range of sets (second line from the bottom in the script). One can then run several processes in parallel, each simulating a different subrange of the simulation sets, and then concatenate the results into a single file. In that case, be sure not to copy the output file headers except at the very top of the concatenated file.
 
 
 ### get_statistics.R
