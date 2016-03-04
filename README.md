@@ -109,3 +109,49 @@ where the command line arguments are as follows:
 * [dt]: the size of each time step (e.g., 0.02)
 * [species]: the number of initial species (e.g., 51)
 * [loci]: the number of distinct loci contributing to the quantitative trait (*n* loci result in 2*n* + 1 distinct genotypes)
+
+
+## IBM.py
+
+Individual-based simulation of Lotka-Volterra dynamics with intraspecific trait variation. This is not part of the manuscript and is simply intended to show that, when the number of individuals is sufficiently large, there is no difference between the results produced by the quantitative genetic Lotka-Volterra model and its individual-based counterpart. Requirements: Python 2.7.6 installed with the packages sys, numpy, and matplotlib.
+
+#### Input
+
+A file containing the parameters with which the simulation is run. It should always look like this:
+
+    S: 2
+    w: 0.1
+    theta: 0.5
+    randomseed: 54321
+    max_steps: 100000
+    N0: 1000 1000
+    mu: -0.3 0.3
+    sigma: 0.1 0.15
+
+Explanation:
+- S: number of species (positive integer)
+- w: competition width (positive float)
+- theta: half-width of effective range of niche axis (positive float)
+- randomseed: set random generator for full replicability (positive integer)
+- max_steps: number of iterations to run simulation for (positive integer)
+- N0: initial abundances (S positive integers, separated by spaces)
+- mu: trait means (S floats, separated by spaces)
+- sigma: trait standard deviations (S positive floats, separated by spaces)
+
+An example is provided in the repository ("input.txt").
+
+#### Output
+
+First, an R-compatible data frame with individuals in the rows, and their species identity (**sppid**) and trait value (**trait**) in the columns. One can redirect the output to a text file for future analysis, like this:
+
+    python IBM.py [inputfile] > [outputfile]
+
+Second, a histogram plot of the trait distributions.
+
+#### To run
+
+From the command line, invoke
+
+    python IBM.py [inputfile]
+
+The command-line parameter [inputfile] is a text file containing the parameters with which the simulation is run (see the "input.txt" file in the repository).
