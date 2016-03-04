@@ -152,9 +152,9 @@ Second, a histogram plot of the trait distributions.
 
 From the command line, invoke
 
-    python IBM.py [inputfile]
+    python IBM.py [inputfile] > [outputfile]
 
-The command-line parameter [inputfile] is a text file containing the parameters with which the simulation is run (see the "input.txt" file in the repository).
+The command-line parameter [inputfile] is a text file containing the parameters with which the simulation is run (see the "input.txt" file in the repository). The data frame output is redirected to [outputfile].
 
 
 ## input.txt
