@@ -155,3 +155,8 @@ From the command line, invoke
     python IBM.py [inputfile]
 
 The command-line parameter [inputfile] is a text file containing the parameters with which the simulation is run (see the "input.txt" file in the repository).
+
+
+## input.txt
+
+A sample input file for the program IBM.py described above.
