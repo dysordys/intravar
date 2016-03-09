@@ -7,6 +7,8 @@ Manuscript, code, and full supporting material for "The effect of intraspecific 
 
 This Mathematica 10.1 notebook simulates a single instance of the quantitative genetic Lotka-Volterra model, and plots the results. One can make a movie of the dynamics unfolding.
 
+In solving the differential equations, we have introduced a weak Allee effect into the Lotka-Volterra dynamics: species whose density falls below a predetermined threshold experience a smooth decline of their per capita growth rates to zero. This is to prevent densities from accidentally dropping to negative values due to numerical error. As long as the densities of extant species are substantially (i.e., several orders of magnitude) greater than the threshold density, this will not make a difference to the outcome of the dynamics.
+
 #### Input
 
 There is no special input: the notebook can be executed as is. To change parameters, simply modify the variables under the "Define parameters" header.
@@ -23,6 +25,8 @@ Import the notebook in Mathematica and execute.
 ## sim\_QG\_LV\_2D.nb
 
 This Mathematica 10.1 notebook simulates a single instance of the quantitative genetic Lotka-Volterra model with two trait dimensions, and plots the results.
+
+In solving the differential equations, we have introduced a weak Allee effect into the Lotka-Volterra dynamics: species whose density falls below a predetermined threshold experience a smooth decline of their per capita growth rates to zero. This is to prevent densities from accidentally dropping to negative values due to numerical error. As long as the densities of extant species are substantially (i.e., several orders of magnitude) greater than the threshold density, this will not make a difference to the outcome of the dynamics.
 
 #### Input
 
