@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     96139,       2014]
-NotebookOptionsPosition[     95320,       1981]
-NotebookOutlinePosition[     95657,       1996]
-CellTagsIndexPosition[     95614,       1993]
+NotebookDataLength[     95637,       2009]
+NotebookOptionsPosition[     94817,       1976]
+NotebookOutlinePosition[     95156,       1991]
+CellTagsIndexPosition[     95113,       1988]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,19 +33,14 @@ Cell[BoxData[
    RowBox[{
    "Clear", " ", "all", " ", "variables", " ", "and", " ", "functions"}], " ",
     "*)"}]}]], "Input",
- CellChangeTimes->{{3.637322032445478*^9, 3.637322036827528*^9}, {
-  3.6373242932574787`*^9, 3.637324293543751*^9}, {3.6383648674069*^9, 
-  3.638364867680562*^9}, {3.638532509031641*^9, 3.638532509215373*^9}, {
-  3.638533324407572*^9, 3.6385333247596607`*^9}, {3.6394129161307592`*^9, 
-  3.639412916328513*^9}, {3.642358036420536*^9, 3.6423580371031523`*^9}, {
-  3.6459748347874107`*^9, 3.6459748350644913`*^9}, {3.647026559735401*^9, 
-  3.647026560092215*^9}, {3.653406427270583*^9, 3.653406427461027*^9}, {
-  3.657201290652562*^9, 3.657201290809084*^9}, {3.657375696634927*^9, 
-  3.6573756974599457`*^9}, {3.665250407775477*^9, 3.665250408032344*^9}, {
-  3.6653170157841883`*^9, 3.6653170165359383`*^9}, {3.665324437640023*^9, 
-  3.665324437774768*^9}, {3.665588908494684*^9, 3.665588908882015*^9}, {
-  3.666027549941337*^9, 3.666027550133381*^9}, {3.666532905183675*^9, 
-  3.666532914807783*^9}}],
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQHe3Ip7ZE8rWjTPUsMO1iu8JhKZDOSNsIpoNZcyMW
+Sr921DpeCqZNmBcafwbSYU+WgekrXL0zQbSK/wwwraffIrZQFkg3d4FpjtJe
+JXvl145svovBdIVRpJqq1mvHAIEkMJ3R8X29ms5rx9zPTBtA9LwVGbcDLV47
+7jmQB6ZPPQy52Gf/2pHlSSSYDgoU+fUYSD/Yrgemt174wfPS77XjNw5GXhAt
+JPFzEqc/0Fw1wckgWqh6ixEvkH52ageYLrnSH9oHpCss54DpfPl9zSkBrx1X
+uBwB06seqLpGB752jLkZ6QaiWdq25cYA6WXzzoFpAOpSjC0=
+  "]],
 
 Cell[CellGroupData[{
 
@@ -1979,8 +1974,8 @@ Cell[BoxData[{
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{956, 1163},
-WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowSize->{1001, 968},
+WindowMargins->{{Automatic, 304}, {Automatic, 0}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (February 25, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1997,23 +1992,23 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 227, 4, 167, "Subchapter"],
-Cell[810, 28, 1125, 19, 38, "Input"],
+Cell[810, 28, 622, 14, 38, "Input"],
 Cell[CellGroupData[{
-Cell[1960, 51, 101, 1, 81, "Section"],
-Cell[2064, 54, 33474, 496, 414, "Input"]
+Cell[1457, 46, 101, 1, 81, "Section"],
+Cell[1561, 49, 33474, 496, 414, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35575, 555, 214, 3, 81, "Section"],
-Cell[35792, 560, 32078, 775, 1739, "Input"]
+Cell[35072, 550, 214, 3, 81, "Section"],
+Cell[35289, 555, 32078, 775, 1689, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[67907, 1340, 98, 1, 81, "Section"],
-Cell[68008, 1343, 7760, 153, 289, "Input"]
+Cell[67404, 1335, 98, 1, 81, "Section"],
+Cell[67505, 1338, 7760, 153, 289, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[75805, 1501, 97, 1, 81, "Section"],
-Cell[75905, 1504, 454, 8, 88, "Text"],
-Cell[76362, 1514, 18930, 463, 1689, "Input"]
+Cell[75302, 1496, 97, 1, 81, "Section"],
+Cell[75402, 1499, 454, 8, 88, "Text"],
+Cell[75859, 1509, 18930, 463, 1689, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
