@@ -72,7 +72,6 @@ Do[
           bbar[sigma_, theta_][mu_] := 0;
         ];
       ];
-
       Do[
         If[Not[(hsquare > 0) && (svar == 1)], (* Do not solve the biologically impossible case where species have positive heritability but no intraspecific variability (svar = 1) *)
           sol = NDSolve[Join[eqs, initialcond], vars[t], {t, 0, tmax}, MaxSteps -> Infinity]; (* Integrate equations *)
@@ -99,4 +98,3 @@ Do[
   ,{rep, Range[1, simsets]} (* Repeat for all simulation sets *)
 ];
 Close[str]; (* Close connection to output file *)
-
