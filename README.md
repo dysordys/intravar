@@ -162,7 +162,7 @@ Explanation:
 - mu: trait means (S floats, separated by spaces)
 - sigma: trait standard deviations (S positive floats, separated by spaces)
 
-An example is provided in the repository ("input.txt").
+An example is provided in the repository (`input.txt`).
 
 #### Output
 
@@ -175,7 +175,7 @@ From the command line, invoke
 
     python IBM.py [inputfile]
 
-The command-line parameter `[inputfile]` is a text file containing the parameters with which the simulation is run (see the "input.txt" file in the repository). To redirect the data frame output to a file, one can use
+The command-line parameter `[inputfile]` is a text file containing the parameters with which the simulation is run (see the `input.txt` file in the repository). To redirect the data frame output to a file, one can use
 
     python IBM.py [inputfile] > [outputfile]
 
