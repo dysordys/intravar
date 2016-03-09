@@ -173,11 +173,15 @@ An example is provided in the repository ("input.txt").
 
 From the command line, invoke
 
+    python IBM.py [inputfile]
+
+The command-line parameter `[inputfile]` is a text file containing the parameters with which the simulation is run (see the "input.txt" file in the repository). To redirect the data frame output to a file, one can use
+
     python IBM.py [inputfile] > [outputfile]
 
-The command-line parameter `[inputfile]` is a text file containing the parameters with which the simulation is run (see the "input.txt" file in the repository). The data frame output is redirected to `[outputfile]`.
+The data frame output is now redirected to `[outputfile]`.
 
 
 ## input.txt
 
-A sample input file for the program IBM.py described above.
+A sample input file for the program `IBM.py` described above.
