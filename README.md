@@ -166,11 +166,8 @@ An example is provided in the repository ("input.txt").
 
 #### Output
 
-First, an R-compatible data frame with individuals in the rows, and their species identity (**sppid**) and trait value (**trait**) in the columns. One can redirect the output to a text file for future analysis, like this:
-
-    python IBM.py [inputfile] > [outputfile]
-
-Second, a histogram plot of the trait distributions.
+- An R-compatible data frame with individuals in the rows, and their species identity (**sppid**) and trait value (**trait**) in the columns, written to `stdout`.
+- A histogram plot of the trait distributions in the final community state.
 
 #### To run
 
