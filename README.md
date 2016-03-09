@@ -3,7 +3,41 @@
 Manuscript, code, and full supporting material for "The effect of intraspecific variation and heritability on community pattern and robustness". Documentation for each file in the repository can be found below.
 
 
-## sim\_QG\_LV\_all.nb
+## sim\_QG\_LV.nb
+
+This Mathematica 10.1 notebook simulates a single instance of the quantitative genetic Lotka-Volterra model, and plots the results. One can make a movie of the dynamics unfolding.
+
+#### Input
+
+There is no special input: the notebook can be executed as is. To change parameters, simply modify the variables under the "Define parameters" header.
+
+#### Output
+
+All output is generated within the notebook itself (time series, plots, and movie).
+
+#### To run
+
+Import the notebook in Mathematica and execute.
+
+
+## sim\_QG\_LV\_2D.nb
+
+This Mathematica 10.1 notebook simulates a single instance of the quantitative genetic Lotka-Volterra model with two trait dimensions, and plots the results.
+
+#### Input
+
+There is no special input: the notebook can be executed as is. To change parameters, simply modify the variables under the "Define parameters" header.
+
+#### Output
+
+All output is generated within the notebook itself (time series and plots).
+
+#### To run
+
+Import the notebook in Mathematica and execute.
+
+
+## sim\_QG\_LV\_all.m
 
 This Mathematica 10.1 script generates the data in all our simulation sets for all parameter values, for the quantitative genetic Lotka-Volterra model.
 
@@ -29,7 +63,7 @@ The data frame gets saved into `[outfile]`, defined near the top of the script.
 
 #### To run
 
-Simply execute the script in Mathematica.
+Import the script in Mathematica, then execute "Run Package".
 
 Note that running the code as is may take several weeks. One way to speed things up is to simulate just a handful of simulation sets at a time, by adjusting the range of sets (second line from the bottom in the script). One can then run several processes in parallel, each simulating a different subrange of the simulation sets, and then concatenate the results into a single file. In that case, be sure not to copy the output file headers except at the very top of the concatenated file.
 
