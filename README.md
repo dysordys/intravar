@@ -1,6 +1,15 @@
 # intravar
 
-Manuscript, code, and full supporting material for "The effect of intraspecific variation and heritability on community pattern and robustness". Documentation for each file in the repository can be found below.
+Manuscript, code, and full supporting material for "The effect of intraspecific variation and heritability on community pattern and robustness". In this repository, you will find:
+* **sim\_QG\_LV.nb**: code for simulating quantitative genetic Lotka-Volterra model
+* **sim\_QG\_LV\_2D.nb**: code for simulating quantitative genetic Lotka-Volterra model with two trait dimensions
+* **sim\_QG\_LV\_all.m**: code to generate all our data using the quantitative genetic Lotka-Volterra model
+* **get_statistics.R**: code for obtaining species richness, trait pattern, and community robustness information
+* **sim\_SK\_LV.R**: code to simulate model with hypergeometric model of inheritance
+* **IBM.py**: code for individual-based implementation of the Lotka-Volterra model
+* **input.txt**: sample input file for `IBM.py`
+
+Documentation for each file in the repository can be found below.
 
 
 ## sim\_QG\_LV.nb
