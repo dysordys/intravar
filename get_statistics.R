@@ -139,7 +139,7 @@ IntravarPvals <- function(tab, Srich, CVs){
         s <- Srich[i]
         cv <- CVs[i]
         ncv <- nullCVs[nullCVs$S==s,-1]
-        return(ifelse(s>2, sum(ncv<cv)/length(ncv),NA))
+        return(ifelse(s>2, sum(ncv<cv)/(length(ncv)+1),NA))
     })
     return(pval)
 }
