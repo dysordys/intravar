@@ -1,15 +1,14 @@
 # intravar
 
-Code used in "The effect of intraspecific variation and heritability on community pattern and robustness". In this repository, you will find:
+Manuscript, Supporting Information, and code used in "The effect of intraspecific variation and heritability on community pattern and robustness". In this repository, you will find:
+* **intravar_final.pdf**: final manuscript file, with the supporting information attached
 * **sim\_QG\_LV.nb**: code for simulating the quantitative genetic Lotka-Volterra model
 * **sim\_QG\_LV\_2D.nb**: code for simulating the quantitative genetic Lotka-Volterra model with two trait dimensions
 * **sim\_QG\_LV\_all.m**: code to generate all our data using the quantitative genetic Lotka-Volterra model
 * **get_statistics.R**: code for obtaining species richness, trait pattern, and community robustness information
 * **sim\_SK\_LV.R**: code to simulate model with hypergeometric model of inheritance
-* **IBM.py**: code for individual-based implementation of the Lotka-Volterra model
-* **input.txt**: sample input file for `IBM.py`
 
-Documentation for each file in the repository can be found below.
+Documentation for each code file in the repository can be found below.
 
 
 ## sim\_QG\_LV.nb
@@ -142,55 +141,3 @@ where the command line arguments are as follows:
 * `[dt]`: the size of each time step (e.g., 0.02)
 * `[species]`: the number of initial species (e.g., 51)
 * `[loci]`: the number of distinct loci contributing to the quantitative trait (*n* loci result in 2*n* + 1 distinct genotypes)
-
-
-## IBM.py
-
-Individual-based simulation of Lotka-Volterra dynamics with intraspecific trait variation. This is not part of the manuscript and is simply intended to show that, when the number of individuals is sufficiently large, there is no difference between the results produced by the quantitative genetic Lotka-Volterra model and its individual-based counterpart. Requirements: Python 2.7.6 installed with the packages sys, numpy, and matplotlib.
-
-#### Input
-
-A file containing the parameters with which the simulation is run. It should always look like this:
-
-    S: 2
-    w: 0.1
-    theta: 0.5
-    randomseed: 54321
-    max_steps: 100000
-    N0: 1000 1000
-    mu: -0.3 0.3
-    sigma: 0.1 0.15
-
-Explanation:
-- S: number of species (positive integer)
-- w: competition width (positive float)
-- theta: half-width of effective range of niche axis (positive float)
-- randomseed: set random generator for full replicability (positive integer)
-- max_steps: number of iterations to run simulation for (positive integer)
-- N0: initial abundances (S positive integers, separated by spaces)
-- mu: trait means (S floats, separated by spaces)
-- sigma: trait standard deviations (S positive floats, separated by spaces)
-
-An example is provided in the repository (`input.txt`).
-
-#### Output
-
-- An R-compatible data frame with individuals in the rows, and their species identity (**sppid**) and trait value (**trait**) in the columns, written to `stdout`.
-- A histogram plot of the trait distributions in the final community state.
-
-#### To run
-
-From the command line, invoke
-
-    python IBM.py [inputfile]
-
-The command-line parameter `[inputfile]` is a text file containing the parameters with which the simulation is run (see the `input.txt` file in the repository). To redirect the data frame output to a file, one can use
-
-    python IBM.py [inputfile] > [outputfile]
-
-The data frame output is now redirected to `[outputfile]`.
-
-
-## input.txt
-
-A sample input file for the program `IBM.py` described above.
